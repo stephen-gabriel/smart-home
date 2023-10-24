@@ -1,0 +1,121 @@
+/****************************/
+/* BELOW 1264px */
+/****************************/
+
+@media (max-width: 79em) {
+  html {
+    font-size: 56.25%;
+  }
+  .contact-form-btn {
+    margin-left: 68rem;
+  }
+}
+
+/****************************/
+/* BELOW 944px */
+/****************************/
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .contact-form-btn {
+    margin-left: 0;
+  }
+}
+
+/****************************/
+/* BELOW 880px */
+/****************************/
+
+@media (max-width: 55em) {
+  .ceo-box {
+    width: 23rem;
+  }
+  .ceo-img {
+    width: 18rem;
+  }
+  .agents-box {
+    width: 20rem;
+  }
+  .agents-img {
+    width: 18rem;
+    height: 18rem;
+  }
+}
+
+/****************************/
+/* BELOW 720px */
+/****************************/
+
+@media (max-width: 45em) {
+  html {
+    font-size: 45%;
+  }
+
+  .main-nav-list {
+    gap: 3rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-contacts {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid--footer {
+    grid-template-columns: 1.5fr 1.5fr 1fr;
+  }
+}
+
+/****************************/
+/* BELOW 640px */
+/****************************/
+
+@media (max-width: 40em) {
+  .main-nav-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 1.6rem;
+  }
+  .estate-agents {
+    grid-template-columns: 1fr 1fr;
+  }
+  .ceo-box {
+    width: 27rem;
+  }
+  .ceo-img {
+    width: 20rem;
+  }
+  .agents-box {
+    width: 25rem;
+  }
+  .agents-img {
+    width: 23rem;
+    height: 25rem;
+  }
+  .about-contacts {
+    column-gap: 1rem;
+  }
+}
+
+/****************************/
+/* BELOW 496px */
+/****************************/
+
+@media (max-width: 31em) {
+  html {
+    font-size: 40%;
+  }
+}

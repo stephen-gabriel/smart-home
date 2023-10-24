@@ -1,0 +1,510 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.body {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(Images/Houses/about-background-img.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 45rem;
+}
+
+.back-to-top-arrow:link,
+.back-to-top-arrow:visited {
+  background-color: #014396;
+  width: 4rem;
+  height: 4rem;
+  position: fixed;
+  right: 3rem;
+  bottom: 4rem;
+  text-align: center;
+  color: #fff;
+  z-index: 9999;
+  transition: all 0.3s;
+}
+
+.back-to-top-arrow:hover,
+.back-to-top-arrow:active {
+  color: #e67e22;
+}
+
+.up-arrow {
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+
+/****************************/
+/* HEADER */
+/****************************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 8rem;
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.logo:link,
+.logo:visited {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.logo-name {
+  font-weight: 900;
+  font-size: 2.4rem;
+  color: #014396;
+  text-shadow: 0 0 2px #000;
+}
+
+.logo-name span {
+  color: #ca7d3a;
+}
+
+.logo-text {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.5rem;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.4rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #e67e22;
+}
+
+.main-nav-btn:link,
+.main-nav-btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #e67e22;
+  padding: 1.2rem 2rem;
+  border-radius: 7px;
+  font-size: 1.4rem;
+  transition: all 0.3s;
+}
+
+.main-nav-btn:hover,
+.main-nav-btn:active {
+  background-color: #cf711f;
+}
+
+/****************************/
+/* SECTION-HERO */
+/****************************/
+
+.hero {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+.heading-primary {
+  text-align: center;
+  font-size: 4.4rem;
+  margin-top: 12.8rem;
+}
+
+/****************************/
+/* SECTION-SERVICES */
+/****************************/
+
+.section-services {
+  background-color: #f5f8fe;
+  color: #014396;
+}
+.services {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 8rem 3.2rem;
+}
+.services-h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+.services-p {
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  max-width: 80rem;
+  margin: 0 auto;
+  margin-bottom: 6.4rem;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4.8rem;
+}
+.services-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+.services-icon {
+  font-size: 5.2rem;
+  margin-bottom: 2.4rem;
+}
+.services-flex-topic {
+  color: #222;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.services-flex-p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #888;
+}
+
+/****************************/
+/* SECTION-AGENTS */
+/****************************/
+
+.section-agents {
+  background-color: #f5f8fe;
+  color: #014396;
+}
+.agents {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 3.2rem 3.2rem 6.4rem 3.2rem;
+}
+.agents-h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+.agents-p {
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.ceo-box {
+  text-align: center;
+  width: 30rem;
+  margin: 6.4rem auto 0;
+  box-shadow: 0 0 5px #ccc;
+  background-color: #fff;
+}
+.ceo-img {
+  width: 23rem;
+  padding-top: 1rem;
+}
+.ceo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 0;
+  box-shadow: 0 0 5px #ccc;
+}
+.ceo-p1 {
+  font-size: 2rem;
+  color: #222;
+}
+.ceo-p2 {
+  font-size: 1.6rem;
+  color: #888;
+}
+.estate-agents {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.agents-box {
+  text-align: center;
+  width: 25rem;
+  margin: 6.4rem auto 0;
+  box-shadow: 0 0 5px #ccc;
+  background-color: #fff;
+}
+.agents-img {
+  width: 23rem;
+  height: 25rem;
+  padding-top: 1rem;
+}
+.agents-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 0;
+  box-shadow: 0 0 5px #ccc;
+}
+.agents-p1 {
+  font-size: 2rem;
+  color: #222;
+}
+.agents-p2 {
+  font-size: 1.6rem;
+  color: #888;
+}
+
+/****************************/
+/* SECTION-CONTACT */
+/****************************/
+
+.section-contact {
+  background-color: #fff;
+  color: #888;
+}
+.about-contact {
+  max-width: 110rem;
+  margin: 0 auto;
+  padding: 6.4rem;
+}
+.about-contacts {
+  background-color: #f5f8fe;
+  padding: 4.8rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  box-shadow: 0 0 20px #ccc;
+}
+.contact-info {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+.contact-icon {
+  font-size: 2.4rem;
+}
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact-p1 {
+  font-size: 1.6rem;
+}
+.contact-p2 {
+  font-size: 1.6rem;
+}
+
+.contact-form-p {
+  font-size: 2rem;
+  text-align: center;
+  padding: 6.4rem 0 4.8rem 0;
+}
+.contact-form {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+.contact-form-name {
+  display: block;
+  width: 100%;
+  height: 4rem;
+  margin-bottom: 2.4rem;
+  background-color: #f5f8fe;
+  border: 1px solid #888;
+  border-radius: 2px;
+  font-family: "Inter", sans-serif;
+  padding-left: 1.2rem;
+}
+.contact-form-name:focus {
+  outline: none;
+}
+.contact-form-name::placeholder {
+  color: #888;
+}
+
+.contact-form-email {
+  display: block;
+  width: 100%;
+  height: 4rem;
+  margin-bottom: 2.4rem;
+  background-color: #f5f8fe;
+  border: 1px solid #888;
+  border-radius: 2px;
+  font-family: "Inter", sans-serif;
+  padding-left: 1.2rem;
+}
+.contact-form-email:focus {
+  outline: none;
+}
+.contact-form-email::placeholder {
+  color: #888;
+}
+
+.contact-form-textarea {
+  display: block;
+  width: 100%;
+  height: 15rem;
+  margin-bottom: 3.2rem;
+  background-color: #f5f8fe;
+  border: 1px solid #888;
+  border-radius: 2px;
+  font-family: "Inter", sans-serif;
+  padding-left: 1.2rem;
+  padding-top: 1.2rem;
+}
+.contact-form-textarea:focus {
+  outline: none;
+}
+.contact-form-textarea::placeholder {
+  color: #888;
+}
+.contact-form-btn {
+  border: none;
+  color: #fff;
+  padding: 1.4rem 3.2rem;
+  background-color: #e67e22;
+  border-radius: 2px;
+  margin-left: 68.6rem;
+  transition: all 0.3s;
+}
+.contact-form-btn:hover {
+  background-color: #cf711f;
+}
+
+/****************************/
+/* FOOTER */
+/****************************/
+
+.footer {
+  max-width: 110rem;
+  padding: 8rem 3.2rem;
+  margin: 0 auto;
+  color: #000;
+  border-top: 1px solid #ccc;
+}
+
+.grid--footer {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+  gap: 6.4rem;
+}
+.footer-logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo:link,
+.footer-logo:visited {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.footer-logo-name {
+  font-weight: 900;
+  font-size: 2.8rem;
+  color: #014396;
+  text-align: left;
+}
+
+.footer-logo-name span {
+  color: #ca7d3a;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  font-size: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #767676;
+  margin-top: auto;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+}
+
+/* 
+
+- Font Sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
