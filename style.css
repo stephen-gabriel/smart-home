@@ -18,7 +18,7 @@ body {
   overflow-x: hidden;
 }
 
-.body {
+.main-body {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(Images/Hero-background-img.jpg);
   background-size: cover;
@@ -131,6 +131,49 @@ body {
   background-color: #cf711f;
 }
 
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #111;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-moon {
+  color: #f1c40f;
+  font-size: 1.6rem;
+}
+
+.fa-sun {
+  color: #f39c12;
+  font-size: 1.6rem;
+}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+
 /****************************/
 /* SECTION-HERO */
 /****************************/
@@ -193,9 +236,10 @@ body {
 .section-main {
   max-width: 120rem;
   color: #fff;
-  margin: 2.4rem auto;
-  padding: 3.2rem;
+  margin: 0 auto;
+  padding: 2.4rem 3.2rem;
 }
+
 .heading-secondary {
   font-size: 3rem;
   font-weight: 700;
@@ -491,6 +535,47 @@ body {
 .footer-link:hover,
 .footer-link:active {
   color: #555;
+}
+
+/****************************/
+/* DARK-MODE */
+/****************************/
+
+.dark-mode .main-section-main {
+  background-color: #222;
+}
+.dark-mode .main-section-main .heading-secondary {
+  color: #3469ab;
+}
+.dark-mode .main-section-main .see-more:link,
+.dark-mode .main-section-main .see-more:visited {
+  color: #3469ab;
+}
+.dark-mode .main-section-main .see-more:hover,
+.dark-mode .main-section-main .see-more:active {
+  color: #e67e22;
+}
+
+.dark-mode .section-testimonial {
+  background-color: #333;
+}
+
+.dark-mode .footer-main {
+  background-color: #222;
+}
+.dark-mode .footer {
+  color: #fff;
+}
+.dark-mode .copyright {
+  color: #ccc;
+}
+.dark-mode .footer-link:link,
+.dark-mode .footer-link:visited {
+  color: #888;
+}
+.dark-mode .footer-link:hover,
+.dark-mode .footer-link:active {
+  color: #ccc;
 }
 
 /* 
